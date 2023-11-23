@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Storage App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .locker {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .reserved {
+            background-color: #f8d7da;
+        }
+        .confirmation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .feedback-form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Secure Storage App</h1>
+    </header>
+
+    <section>
+        <h2>Main Dashboard</h2>
+        <div class="grid">
+            <!-- Locker grid goes here -->
+            <div class="locker"></div>
+            <div class="locker reserved"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Locker Reservation</h2>
+        <button>Reserve Locker</button>
+    </section>
+
+    <section>
+        <div class="locker confirmation">
+            <p>Locker reserved successfully!</p>
+            <p>Follow the instructions to open and close the locker.</p>
+        </div>
+    </section>
+
+    <section class="feedback-form">
+        <h2>User Feedback</h2>
+        <textarea placeholder="Share your thoughts..."></textarea>
+        <button>Submit Feedback</button>
+    </section>
+
+</body>
+</html>
